@@ -9,8 +9,21 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        maroon: {
+          DEFAULT: "#7B1A00",
+          deep: "#3D0800",
+        },
+        saffron: "#E07820",
+        parchment: "#FDF3DC",
+        amber: "#C8A878",
+        brown: "#2D1400",
+        income: "#2E7D32",
+        expense: "#C62828",
+      },
+      fontFamily: {
+        display: ["var(--font-cinzel)", "serif"],
+        kannada: ["var(--font-noto-kannada)", "serif"],
+        sans: ["var(--font-source-sans)", "system-ui", "sans-serif"],
       },
     },
   },

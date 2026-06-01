@@ -1,101 +1,190 @@
-import Image from "next/image";
+import Link from "next/link";
+import { GalleryGrid } from "@/components/GalleryGrid";
+import { HelpCards } from "@/components/HelpCards";
+import { Hero } from "@/components/Hero";
+import { SwamiPortrait } from "@/components/SwamiPortrait";
+import { SponsorLogos } from "@/components/SponsorSection";
+import { event } from "@/data/event";
+import { sponsors } from "@/data/sponsors";
 
-export default function Home() {
+export default function HomePage() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="https://nextjs.org/icons/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      <Hero />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="https://nextjs.org/icons/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+      <section className="py-16">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <p className="eyebrow text-center">Get involved</p>
+          <h2 className="section-title mt-2 text-center">How Can You Help?</h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
+            RSVP to attend, sign up to volunteer, bring a dish, or support us
+            with a donation.
+          </p>
+          <div className="mt-10">
+            <HelpCards />
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="https://nextjs.org/icons/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      <section className="border-y border-amber/40 bg-white/40 py-16">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <p className="eyebrow">About the Event</p>
+          <h2 className="section-title mt-2">
+            With the Divine Blessings of
+            <br />
+            Sri Guru Raghavendra Swami
+          </h2>
+          <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+              <p className="text-brown/90">
+                {event.orgName} ({event.orgShort}) is proud to announce the
+                annual {event.name} — a sacred gathering of the Sri Raghavendra
+                devotee community in Nashville.
+              </p>
+              <p className="mt-4 text-brown/90">
+                The event features morning Pooja, Pravachana, a cultural
+                program, community Prasadam, and evening Aarti. {event.association}.
+              </p>
+              <p className="mt-4 font-medium text-maroon">{event.dedication}</p>
+              <Link href="/schedule" className="btn-primary mt-6 inline-flex">
+                View Full Schedule →
+              </Link>
+            </div>
+            <SwamiPortrait variant="about" />
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <p className="eyebrow">Past Events</p>
+          <h2 className="section-title mt-2">
+            See the Spirit of Our Community
+          </h2>
+          <p className="mt-3 max-w-2xl text-brown/85">
+            Watch the highlights from Raayara Aaradhana Mahotsava 2025 — moments
+            of devotion, joy, and togetherness.
+          </p>
+          <div className="mt-8 aspect-video overflow-hidden rounded-xl border border-amber/50 shadow-lg">
+            <iframe
+              src={event.highlightVideoUrl}
+              title="Event highlights 2025"
+              className="h-full w-full"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+            />
+          </div>
+          <div className="mt-6 grid gap-4 sm:grid-cols-3">
+            {event.highlightClips.map((clip) => {
+              const platformLabel =
+                clip.platform === "facebook" ? "Facebook" : "YouTube";
+              const isLink = clip.url && clip.url !== "#";
+              const inner = (
+                <>
+                  <span className="text-2xl">▶</span>
+                  <div>
+                    <p className="font-bold text-maroon-deep">{clip.title}</p>
+                    <p className="text-xs text-brown/70">
+                      {clip.duration} · {platformLabel}
+                    </p>
+                  </div>
+                </>
+              );
+              if (!isLink) {
+                return (
+                  <div
+                    key={clip.title}
+                    className="card flex items-center gap-3 opacity-70"
+                  >
+                    {inner}
+                  </div>
+                );
+              }
+              return (
+                <a
+                  key={clip.title}
+                  href={clip.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="card flex items-center gap-3 transition hover:border-saffron"
+                >
+                  {inner}
+                </a>
+              );
+            })}
+          </div>
+          <p className="mt-6 text-center">
+            <a
+              href={event.youtubeChannelUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-maroon underline"
+            >
+              View YouTube Channel →
+            </a>
+          </p>
+        </div>
+      </section>
+
+      <section className="border-t border-amber/40 bg-amber/20 py-16">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <p className="eyebrow text-center">Program</p>
+          <h2 className="section-title mt-2 text-center">What to Expect</h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
+            A full day of meaningful activities for the whole family.
+          </p>
+          <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {event.whatToExpect.map((item) => (
+              <div key={item.title} className="card">
+                <span className="text-3xl" aria-hidden>
+                  {item.icon}
+                </span>
+                <h3 className="mt-3 text-lg font-bold text-maroon-deep">
+                  {item.title}
+                </h3>
+                <p className="mt-2 text-sm text-brown/85">{item.description}</p>
+                <p className="mt-3 text-sm font-bold text-saffron">{item.time}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <p className="eyebrow text-center">Memories</p>
+          <h2 className="section-title mt-2 text-center">
+            Photos from Past Events
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
+            A glimpse of the joy, devotion, and community from Raayara Aaradhana
+            Mahotsava 2025.
+          </p>
+          <div className="mt-10">
+            <GalleryGrid />
+          </div>
+        </div>
+      </section>
+
+      <section className="border-t border-amber/40 bg-maroon/5 py-16">
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <p className="eyebrow text-center">Gratitude</p>
+          <h2 className="section-title mt-2 text-center">
+            Thank You to Our Sponsors
+          </h2>
+          <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
+            Generous community members who make this event possible.
+          </p>
+          <div className="mt-10">
+            <SponsorLogos sponsors={sponsors} />
+          </div>
+          <p className="mt-8 text-center">
+            <Link href="/sponsor" className="btn-saffron">
+              Become a Sponsor →
+            </Link>
+          </p>
+        </div>
+      </section>
+    </>
   );
 }
