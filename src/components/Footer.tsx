@@ -17,7 +17,7 @@ export function Footer() {
                 alt=""
                 width={40}
                 height={40}
-                className="rounded-full border border-saffron/40"
+                className="object-contain"
               />
               <h3 className="font-display text-xl font-bold">{event.orgShort}</h3>
             </div>

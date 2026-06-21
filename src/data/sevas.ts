@@ -15,30 +15,57 @@ export type Seva = {
  */
 export const sevas: Seva[] = [
   {
-    id: "maha-pooja",
-    name: "Maha Pooja Seva",
-    price: 101,
+    id: "Panchamrutha_Seva",
+    name: "Panchamrutha Seva",
+    price: 25,
     description:
-      "Special pooja sankalpa offered in your family name during the main aradhane.",
-    imageUrl: "",
+      "Panchamrutha Seva is a special pooja where Devotees family will sponsor panchaamruta abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/panchamrutha_seva.jpg",
     bookingUrl: "",
   },
   {
-    id: "annadana",
-    name: "Annadana Seva",
+    id: "Ashtottara_Seva",
+    name: "Ashtottara Seva",
     price: 51,
     description:
-      "Support prasadam and community lunch service for devotees attending the event.",
-    imageUrl: "",
+      "Ashtottara Seva is a special pooja where Devotees family will sponsor ashtottara abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/ashtottara_seva.jpg",
     bookingUrl: "",
   },
   {
-    id: "deepa-seva",
-    name: "Deepa Seva",
-    price: 31,
+    id: "Annadana_Seva",
+    name: "Annadana Seva",
+    price: 75,
     description:
-      "Contribute to sacred lamps and puja materials used during the day-long program.",
-    imageUrl: "",
+      "Annadana Seva is a special pooja where Devotees family will sponsor annadana abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/annadana_seva.jpg",
+    bookingUrl: "",
+  },
+  {
+    id: "Paada_Pooja_Seva",
+    name: "Paada Pooja Seva",
+    price: 101,
+    description:
+      "Paada Pooja Seva is a special pooja where Devotees family will sponsor paada pooja to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/paada_pooja_seva.jpg",
+    bookingUrl: "",
+  },
+  {
+    id: "Pushpa_seva",
+    name: "Pushpa Seva- Rayara Aaradhane",
+    price: 251,
+    description:
+      "Pushpa Seva is a special pooja where Devotees family will sponsor pushpa abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/pushpa_seva.jpg",
+    bookingUrl: "",
+  },
+  {
+    id: "Sarva_seva",
+    name: "Sarva Seva",
+    price: 501,
+    description:
+      "Sarva Seva is a special pooja where Devotees family will sponsor sarva abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/sarva_seva.jpg",
     bookingUrl: "",
   },
 ];
