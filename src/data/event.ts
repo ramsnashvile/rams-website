@@ -41,11 +41,11 @@ export const event = {
     food: "food@ramsnashville.org",
     treasurer: "treasurer@ramsnashville.org",
   },
-  treasurerName: "Sunita Rao",
+  treasurerName: "Guruprasad  Anginthayya",
   volunteerPhone: "(615) 555-0123",
   is501c3: false,
   // Replace with real URLs when forms are created
-  rsvpTallyUrl: "",
+  rsvpTallyUrl: "https://tally.so/r/Bz5aW5",
   foodTallyUrl: "",
   contactFormUrl: "",
   volunteerSignupUrl: "",

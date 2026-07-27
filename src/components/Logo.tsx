@@ -33,7 +33,7 @@ export function Logo({
         alt={`${event.orgShort} logo`}
         width={box}
         height={box}
-        className="rounded-full border-2 border-saffron/50 shadow-md"
+        className="object-contain"
         priority
       />
       {showText && <span>RAMS</span>}

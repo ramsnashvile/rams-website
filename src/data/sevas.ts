@@ -15,30 +15,57 @@ export type Seva = {
  */
 export const sevas: Seva[] = [
   {
-    id: "maha-pooja",
-    name: "Maha Pooja Seva",
-    price: 101,
+    id: "Ashtottara_Seva",
+    name: "Ashtottara Seva",
+    price: 25,
     description:
-      "Special pooja sankalpa offered in your family name during the main aradhane.",
-    imageUrl: "",
+      "Ashtottara Seva is a special pooja where Devotees family will sponsor ashtottara abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/ashtottara_seva.jpg",
     bookingUrl: "",
-  },
+  },  
   {
-    id: "annadana",
-    name: "Annadana Seva",
+    id: "Panchamrutha_Seva",
+    name: "Panchamrutha Seva",
     price: 51,
     description:
-      "Support prasadam and community lunch service for devotees attending the event.",
-    imageUrl: "",
+      "Panchamrutha Seva is a special pooja where Devotees family will sponsor panchaamruta abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/panchamrutha_seva.jpg",
+    bookingUrl: "",
+  },  
+  {
+    id: "Paada_Pooja_Seva",
+    name: "Paada Pooja Seva",
+    price: 101,
+    description:
+      "Paada Pooja Seva is a special pooja where Devotees family will sponsor paada pooja to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/paada_pooja_seva.jpg",
+    bookingUrl: "",
+  },   
+  {
+    id: "Sarva_seva",
+    name: "Sarva Seva",
+    price: 201,
+    description:
+      "Sarva Seva is a special pooja where Devotees family will sponsor sarva abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/sarva_seva.jpg",
     bookingUrl: "",
   },
   {
-    id: "deepa-seva",
-    name: "Deepa Seva",
-    price: 31,
+    id: "Annadana_Seva",
+    name: "Annadana Seva",
+    price: 1,
     description:
-      "Contribute to sacred lamps and puja materials used during the day-long program.",
-    imageUrl: "",
+      "Annadana Seva is a special pooja in which devotees and their families can sponsor Annadana Abhisheka for Sri Raghavendra Swamy. Contributions of any amount are welcome; there is no minimum or maximum limit.",
+    imageUrl: "/sevas/annadana_seva.jpg",
+    bookingUrl: "",
+  },
+  {
+    id: "Sponsorships",
+    name: "Sponsorships",
+    price: 251,
+    description:
+      "Sponsorships are a way to support Sri Raghavendra Swamy and his mission. Contributions of any amount are welcome; there is no minimum or maximum limit.",
+    imageUrl: "/sevas/sponsorships.jpg",
     bookingUrl: "",
   },
 ];
