@@ -15,32 +15,23 @@ export type Seva = {
  */
 export const sevas: Seva[] = [
   {
-    id: "Panchamrutha_Seva",
-    name: "Panchamrutha Seva",
-    price: 25,
-    description:
-      "Panchamrutha Seva is a special pooja where Devotees family will sponsor panchaamruta abhishekha to Sri Raghavendra Swamy",
-    imageUrl: "/sevas/panchamrutha_seva.jpg",
-    bookingUrl: "",
-  },
-  {
     id: "Ashtottara_Seva",
     name: "Ashtottara Seva",
-    price: 51,
+    price: 25,
     description:
       "Ashtottara Seva is a special pooja where Devotees family will sponsor ashtottara abhishekha to Sri Raghavendra Swamy",
     imageUrl: "/sevas/ashtottara_seva.jpg",
     bookingUrl: "",
-  },
+  },  
   {
-    id: "Annadana_Seva",
-    name: "Annadana Seva",
-    price: 75,
+    id: "Panchamrutha_Seva",
+    name: "Panchamrutha Seva",
+    price: 51,
     description:
-      "Annadana Seva is a special pooja where Devotees family will sponsor annadana abhishekha to Sri Raghavendra Swamy",
-    imageUrl: "/sevas/annadana_seva.jpg",
+      "Panchamrutha Seva is a special pooja where Devotees family will sponsor panchaamruta abhishekha to Sri Raghavendra Swamy",
+    imageUrl: "/sevas/panchamrutha_seva.jpg",
     bookingUrl: "",
-  },
+  },  
   {
     id: "Paada_Pooja_Seva",
     name: "Paada Pooja Seva",
@@ -49,23 +40,32 @@ export const sevas: Seva[] = [
       "Paada Pooja Seva is a special pooja where Devotees family will sponsor paada pooja to Sri Raghavendra Swamy",
     imageUrl: "/sevas/paada_pooja_seva.jpg",
     bookingUrl: "",
-  },
-  {
-    id: "Pushpa_seva",
-    name: "Pushpa Seva- Rayara Aaradhane",
-    price: 251,
-    description:
-      "Pushpa Seva is a special pooja where Devotees family will sponsor pushpa abhishekha to Sri Raghavendra Swamy",
-    imageUrl: "/sevas/pushpa_seva.jpg",
-    bookingUrl: "",
-  },
+  },   
   {
     id: "Sarva_seva",
     name: "Sarva Seva",
-    price: 501,
+    price: 201,
     description:
       "Sarva Seva is a special pooja where Devotees family will sponsor sarva abhishekha to Sri Raghavendra Swamy",
     imageUrl: "/sevas/sarva_seva.jpg",
+    bookingUrl: "",
+  },
+  {
+    id: "Annadana_Seva",
+    name: "Annadana Seva",
+    price: 1,
+    description:
+      "Annadana Seva is a special pooja in which devotees and their families can sponsor Annadana Abhisheka for Sri Raghavendra Swamy. Contributions of any amount are welcome; there is no minimum or maximum limit.",
+    imageUrl: "/sevas/annadana_seva.jpg",
+    bookingUrl: "",
+  },
+  {
+    id: "Sponsorships",
+    name: "Sponsorships",
+    price: 251,
+    description:
+      "Sponsorships are a way to support Sri Raghavendra Swamy and his mission. Contributions of any amount are welcome; there is no minimum or maximum limit.",
+    imageUrl: "/sevas/sponsorships.jpg",
     bookingUrl: "",
   },
 ];

@@ -11,45 +11,45 @@ export type CommitteeMember = {
  */
 export const executiveCommittee: CommitteeMember[] = [
   {
-    name: "Committee Chair",
+    name: "Madduri Gopala Shankar",
     role: "President",
     description:
       "Leads overall planning for Raayara Aaradhana Mahotsava and coordinates with RAMA Atlanta.",
     imageUrl: "",
   },
   {
-    name: "Program Lead",
+    name: "Sushma Prahlad Navaratna",
     role: "Vice President",
     description:
       "Oversees schedule, cultural program, and guest coordination for the annual event.",
     imageUrl: "",
   },
   {
-    name: "Sunita Rao",
-    role: "Treasurer",
-    description:
-      "Maintains transparent finance reporting and works with sponsors and donors.",
-    imageUrl: "",
-  },
-  {
-    name: "Volunteer Lead",
-    role: "Volunteer Coordinator",
-    description:
-      "Manages SignUpGenius tasks and day-of volunteer assignments.",
-    imageUrl: "",
-  },
-  {
-    name: "Communications Lead",
+    name: "Nataraj Sreelakshmi",
     role: "Secretary",
     description:
       "Handles community emails, website updates, and event announcements.",
     imageUrl: "",
   },
   {
-    name: "Youth Representative",
-    role: "Youth Committee",
+    name: "Guruprasad Anginthayya",
+    role: "Treasurer",
     description:
-      "Brings youth voices into planning and helps maintain the website content on GitHub.",
+      "Maintains transparent finance reporting and works with sponsors and donors.",
+    imageUrl: "",
+  },
+  {
+    name: "Suma Srinivas",
+    role: "Trustee",
+    description:
+      "Supports the organization's mission and helps with fundraising efforts.",
+    imageUrl: "",
+  },
+  {
+    name: "Hemanth Rangarajan ",
+    role: "Trustee",
+    description:
+      "Supports the organization's mission and helps with fundraising efforts.",
     imageUrl: "",
   },
 ];

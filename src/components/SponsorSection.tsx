@@ -64,7 +64,7 @@ export function SponsorTierCards() {
             </span>
           )}
           <p className="mt-2 text-center text-xs text-brown/60">
-            Stripe checkout · Receipt emailed automatically
+            Stripe checkout · Receipt emailed by Stripe
           </p>
         </div>
       ))}
@@ -137,8 +137,7 @@ export function GeneralDonation() {
         </span>
       )}
       <p className="mt-4 text-xs text-brown/70">
-        Processed securely via Stripe · Receipt emailed to you · All income
-        publicly reported on our{" "}
+        Processed securely via Stripe · All income publicly reported on our{" "}
         <Link href="/about/finance" className="font-semibold text-maroon underline">
           Finance
         </Link>{" "}
