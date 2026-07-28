@@ -22,8 +22,7 @@ export function Footer() {
               <h3 className="font-display text-xl font-bold">{event.orgShort}</h3>
             </div>
             <p className="mt-3 max-w-md text-sm text-parchment/85">
-              {event.orgName} — a devotee community celebrating the divine
-              grace of Sri Guru Raghavendra Swami.
+              {event.orgName} — sacred gathering of Sri Raghavendra Swamy devotee's in Nashville.
             </p>
             <p className="mt-2 text-sm text-parchment/75">{event.association}</p>
           </div>
@@ -31,11 +30,11 @@ export function Footer() {
           <div>
             <h4 className="mb-3 font-bold text-saffron">Event</h4>
             <ul className="space-y-2 text-sm">
-              <li>
+              {/* <li>
                 <Link href="/schedule" className="hover:underline">
                   Aaraadhane 2026 Schedule
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/rsvp" className="hover:underline">
                   RSVP
@@ -67,11 +66,11 @@ export function Footer() {
                   Volunteer
                 </Link>
               </li>
-              <li>
+              {/* <li>
                 <Link href="/food" className="hover:underline">
-                  Bring Food
+                  Help With Food Preparation
                 </Link>
-              </li>
+              </li> */}
               <li>
                 <Link href="/sponsor" className="hover:underline">
                   Sponsor / Donate

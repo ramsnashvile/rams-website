@@ -1,16 +1,16 @@
 export const event = {
-  name: "Raayara Aaradhana Mahotsava",
+  name: "Sri Raghavendra Swamy Aaradhana Mahothsava",
   year: 2026,
   tagline:
-    "A sacred celebration of Sri Raghavendra Swami's divine grace",
+    "A sacred celebration of Sri Raghavendra Swamy's divine grace",
   kannadaTitle: "ರಾಯರ ಆರಾಧನಾ ಮಹೋತ್ಸವ",
-  orgName: "Raayara Aaradhana Mahotsava Samithi Nashville",
-  orgShort: "RAMS Nashville",
+  orgName: "Raayara Aaradhana Mahothsava Samithi,Nashville",
+  orgShort: "RAM'S Nashville",
   association:
     "Organized in association with Ananthaadi Rayara Matha, Atlanta (RAMA Atlanta)",
   dedication:
-    "Bharathi RamaNa mukhya PraNaantargata Sri Krishnaarpanamastu 🙏",
-  date: "Saturday, August 29, 2026",
+    "",
+  date: "Sunday, August 30, 2026",
   dateShort: "Aug 29, 2026",
   time: "9:00 AM – 6:00 PM",
   venue: "Sri Sai Baba Temple, Nashville",
@@ -19,30 +19,30 @@ export const event = {
     "https://www.google.com/maps/search/?api=1&query=12330+Old+Hickory+Blvd,+Antioch,+TN+37013",
   logoUrl: "/logo.png",
   logoSmUrl: "/logo-sm.png",
-  heroKannada: "ಶ್ರೀ ಗುರು ರಾಘವೇಂದ್ರ ಸ್ವಾಮಿ ಆರಾಧನಾ",
-  heroSubtitle: "Sri Guru Raghavendra Aradhana · Nashville, TN",
+  heroKannada: "",
+  heroSubtitle: "",
   // Optional: add MP4 to public/videos/event-highlight.mp4
   heroVideoUrl: "/videos/event-highlight.mp4",
   heroPosterUrl: "/images/raghavendra-swami.png",
   swamiPortraitUrl: "/images/raghavendra-swami.png",
   swamiPortraitAlt:
-    "Sri Guru Raghavendra Swami with Sri Krishna — devotional portrait",
+    "Sri Guru Raghavendra Swamy with Sri Krishna — devotional portrait",
   useHeroVideo: false,
   stats: {
-    attendees: "500+",
-    programs: "6+",
-    volunteerSlots: "50+",
-    saveTheDate: "Aug 29",
+    attendees: "",
+    programs: "",
+    volunteerSlots: "",
+    saveTheDate: "",
   },
   emails: {
     general: "info@ramsnashville.org",
-    volunteer: "volunteer@ramsnashville.org",
+    volunteer: "Madduri Gopala Shankar +16158393094 (Whatsapp)",
     sponsor: "sponsor@ramsnashville.org",
     food: "food@ramsnashville.org",
     treasurer: "treasurer@ramsnashville.org",
   },
   treasurerName: "Guruprasad  Anginthayya",
-  volunteerPhone: "(615) 555-0123",
+  volunteerPhone: "(615) 290-9378",
   is501c3: false,
   // Replace with real URLs when forms are created
   rsvpTallyUrl: "https://tally.so/r/Bz5aW5",
@@ -98,8 +98,8 @@ export const event = {
   },
   highlightClips: [
     {
-      title: "Morning Pooja",
-      duration: "Watch",
+      title: "Morning Pooja.",
+      duration: "Coming Soon",
       url: "https://www.facebook.com/share/v/1H8yeVmztk/",
       platform: "facebook" as const,
     },
@@ -119,45 +119,36 @@ export const event = {
   whatToExpect: [
     {
       icon: "🙏",
-      title: "Morning Pooja",
+      title: "Aradhana Pooja",
       description:
-        "Begin with collective prayer and traditional rituals in the main hall.",
+        "Begin with Aradhana Rituals  in the main hall.",
       time: "9:00 AM",
     },
+
+    {
+      icon: "🍇🍽️",
+      title: "Light Refreshments",
+      description:
+        "Fruits,Juices and Snacks",
+      time: "Approximately around 10:00 AM",
+    },
+    
     {
       icon: "🎭",
       title: "Cultural Program",
       description:
-        "Music, dance, and performances from community members of all ages.",
-      time: "11:00 AM",
+        "Keerthana's,Group Songs and Dance Performance,",
+      time: "",
     },
+
     {
       icon: "🍽️",
-      title: "Community Lunch",
+      title: "Prasadam(Lunch)",
       description:
-        "Prasadam served for everyone. Volunteer-prepared vegetarian meal.",
-      time: "12:30 PM",
+        "Prasadam served for everyone. Volunteer-prepared vegetarian meal(No Onion,No Garlic)",
+      time: "Approximately around 2:00 PM",
     },
-    {
-      icon: "👧",
-      title: "Children's Activities",
-      description:
-        "Games, crafts, and storytelling for children while adults attend sessions.",
-      time: "All day",
-    },
-    {
-      icon: "🕯️",
-      title: "Evening Aarti",
-      description:
-        "Close the day together with evening prayers and community aarti.",
-      time: "5:00 PM",
-    },
-    {
-      icon: "📸",
-      title: "Photo Booth",
-      description:
-        "Capture memories with your family and friends at our community photo booth.",
-      time: "All day",
-    },
+    
+    
   ],
 };

@@ -73,10 +73,10 @@ export function Hero() {
       <div className="relative border-t border-parchment/10 bg-maroon-deep/80">
         <div className="mx-auto grid max-w-6xl grid-cols-2 gap-4 px-4 py-8 md:grid-cols-4 md:px-6">
           {[
-            { value: event.stats.attendees, label: "Attendees expected" },
-            { value: event.stats.programs, label: "Program segments" },
-            { value: event.stats.volunteerSlots, label: "Volunteer slots open" },
-            { value: event.stats.saveTheDate, label: "Save the date" },
+            { value: event.stats.attendees, label: "" },
+            { value: event.stats.programs, label: "" },
+            { value: event.stats.volunteerSlots, label: "" },
+            { value: event.stats.saveTheDate, label: "" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">
               <p className="font-display text-2xl font-black text-saffron md:text-3xl">

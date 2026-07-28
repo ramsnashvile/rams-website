@@ -11,7 +11,7 @@ export default function ShlokasPage() {
       <PageHeader
         eyebrow="Resources"
         title="Shlokas"
-        subtitle="Devotional verses for daily remembrance. Edit src/data/shlokas.ts to add more."
+        subtitle="Devotional verses for daily remembrance."
       />
 
       <section className="py-12">

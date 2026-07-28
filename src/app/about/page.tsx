@@ -4,12 +4,12 @@ import { SwamiPortrait } from "@/components/SwamiPortrait";
 import { event } from "@/data/event";
 
 const aboutLinks = [
-  {
-    href: "/about/mission",
-    title: "Our Mission",
-    description: "Why RAMS exists and how we serve the devotee community.",
-    icon: "🎯",
-  },
+  // {
+  //   href: "/about/mission",
+  //   title: "Our Mission",
+  //   description: "Why RAMS exists and how we serve the devotee community.",
+  //   icon: "🎯",
+  // },
   {
     href: "/about/executive-committee",
     title: "Executive Committee",
@@ -17,7 +17,7 @@ const aboutLinks = [
     icon: "👥",
   },
   {
-    href: "/about/finance",
+    href: "",
     title: "Finance",
     description: "Transparent reporting of every dollar in and out.",
     icon: "📊",
@@ -34,14 +34,14 @@ export default function AboutPage() {
       <PageHeader
         eyebrow={event.orgShort}
         title="About Us"
-        subtitle={`${event.orgName} — celebrating the divine grace of Sri Guru Raghavendra Swami in Nashville.`}
+        subtitle={`${event.orgName} — celebrating the divine grace of Sri Guru Raghavendra Swamy in Nashville.`}
       />
 
       <section className="py-12">
         <div className="mx-auto grid max-w-6xl gap-12 px-4 md:px-6 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-brown/90">
-              RAMS is a devotee-led community organization hosting the annual
+              RAM'S is a devotee-led community organization hosting the annual
               Raayara Aaradhana Mahotsava and year-round spiritual activities
               for families in Middle Tennessee.
             </p>

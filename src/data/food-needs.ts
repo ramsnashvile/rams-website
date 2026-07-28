@@ -7,7 +7,7 @@ export type FoodNeed = {
 
 export const foodNeeds: FoodNeed[] = [
   {
-    dish: "Rice / Pulao",
+    dish: "Rice ",
     detail: "Large pot (50+ servings)",
     serves: "50+",
     status: "filled",

@@ -34,12 +34,12 @@ export default function SchedulePage() {
 
       <section className="py-12">
         <div className="mx-auto max-w-3xl px-4 md:px-6">
-          <p className="mb-8 rounded-lg bg-amber/25 px-4 py-3 text-sm text-brown/85">
+          {/* <p className="mb-8 rounded-lg bg-amber/25 px-4 py-3 text-sm text-brown/85">
             Schedule content comes from{" "}
             <code className="rounded bg-white/50 px-1">src/data/schedule.ts</code>{" "}
             — youth committee can update times and titles on GitHub without
             touching page code.
-          </p>
+          </p> */}
           <ScheduleTable items={schedule} />
         </div>
       </section>

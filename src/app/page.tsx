@@ -17,8 +17,6 @@ export default function HomePage() {
           <p className="eyebrow text-center">Get involved</p>
           <h2 className="section-title mt-2 text-center">How Can You Help?</h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
-            RSVP to attend, sign up to volunteer, bring a dish, or support us
-            with a donation.
           </p>
           <div className="mt-10">
             <HelpCards />
@@ -32,18 +30,18 @@ export default function HomePage() {
           <h2 className="section-title mt-2">
             With the Divine Blessings of
             <br />
-            Sri Guru Raghavendra Swami
+            Sri Guru Raghavendra Swamy
           </h2>
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
-              <p className="text-brown/90">
+              <p className="text-left text-brown/90">
                 {event.orgName} ({event.orgShort}) is proud to announce the
-                annual {event.name} — a sacred gathering of the Sri Raghavendra
-                devotee community in Nashville.
+                annual {event.name} — a sacred gathering of Sri Raghavendra Swamy
+                devotee's  in Nashville.
               </p>
-              <p className="mt-4 text-brown/90">
-                The event features morning Pooja, Pravachana, a cultural
-                program, community Prasadam, and evening Aarti. {event.association}.
+              <p className="mt-4 text-left text-brown/90">
+                The event features morning Pooja, cultural
+                programs, Mahamangalarthi followed by Prasadam(Lunch), {event.association}.
               </p>
               <p className="mt-4 font-medium text-maroon">{event.dedication}</p>
               <Link href="/schedule" className="btn-primary mt-6 inline-flex">
@@ -57,12 +55,12 @@ export default function HomePage() {
 
       <section className="py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <p className="eyebrow">Past Events</p>
+          <p className="eyebrow">COMING SOON</p>
           <h2 className="section-title mt-2">
             See the Spirit of Our Community
           </h2>
           <p className="mt-3 max-w-2xl text-brown/85">
-            Watch the highlights from Raayara Aaradhana Mahotsava 2025 — moments
+            Watch the highlights from Raayara Aaradhana Mahothsava 2026 — moments
             of devotion, joy, and togetherness.
           </p>
           <div className="mt-8 aspect-video overflow-hidden rounded-xl border border-amber/50 shadow-lg">
@@ -120,7 +118,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="font-bold text-maroon underline"
             >
-              View YouTube Channel →
+              
             </a>
           </p>
         </div>
@@ -128,10 +126,10 @@ export default function HomePage() {
 
       <section className="border-t border-amber/40 bg-amber/20 py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <p className="eyebrow text-center">Program</p>
-          <h2 className="section-title mt-2 text-center">What to Expect</h2>
+          <p className="eyebrow text-center"></p>
+          <h2 className="section-title mt-2 text-center">Event Overview</h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
-            A full day of meaningful activities for the whole family.
+            
           </p>
           <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
             {event.whatToExpect.map((item) => (
@@ -150,7 +148,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="py-16">
+      {/* <section className="py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <p className="eyebrow text-center">Memories</p>
           <h2 className="section-title mt-2 text-center">
@@ -158,26 +156,26 @@ export default function HomePage() {
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
             A glimpse of the joy, devotion, and community from Raayara Aaradhana
-            Mahotsava 2025.
+            Mahothsava 2025.
           </p>
           <div className="mt-10">
             <GalleryGrid />
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className="border-t border-amber/40 bg-maroon/5 py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <p className="eyebrow text-center">Gratitude</p>
+          <p className="eyebrow text-center"></p>
           <h2 className="section-title mt-2 text-center">
-            Thank You to Our Sponsors
+            Sponsorship Oppurtunity
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
             Generous community members who make this event possible.
           </p>
-          <div className="mt-10">
+          {/* <div className="mt-10">
             <SponsorLogos sponsors={sponsors} />
-          </div>
+          </div> */}
           <p className="mt-8 text-center">
             <Link href="/sponsor" className="btn-saffron">
               Become a Sponsor →
