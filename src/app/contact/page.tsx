@@ -44,7 +44,7 @@ export default function ContactPage() {
     <>
       <PageHeader
         title="Get in Touch"
-        subtitle="Questions about the event? We're happy to help."
+        subtitle=""
       />
 
       <section className="py-12">
@@ -79,7 +79,7 @@ export default function ContactPage() {
             </ul>
           </div>
 
-          <div>
+          {/* <div>
             <h2 className="text-xl font-bold text-maroon-deep">
               Send a Message
             </h2>
@@ -90,7 +90,7 @@ export default function ContactPage() {
                 minHeight={500}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </section>
     </>

@@ -17,7 +17,7 @@ const cards = [
   },
   {
     icon: "🍱",
-    title: "Bring Food",
+    title: "Volunteer For Food Preparation",
     description: "Sign up to bring a dish — see what's needed",
     href: "/food",
     cta: "Signup →",

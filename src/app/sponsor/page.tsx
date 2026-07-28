@@ -20,12 +20,12 @@ export default function SponsorPage() {
 
       <section className="py-12">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <p className="mb-8 rounded-lg bg-amber/25 px-4 py-3 text-sm text-brown/85">
+          {/* <p className="mb-8 rounded-lg bg-amber/25 px-4 py-3 text-sm text-brown/85">
             Stripe Payment Links are plain URLs — update them in{" "}
             <code className="rounded bg-white/50 px-1">src/data/event.ts</code>{" "}
             under <code className="rounded bg-white/50 px-1">stripe</code>. No
             backend required.
-          </p>
+          </p> */}
           <SponsorTierCards />
           <GeneralDonation />
         </div>

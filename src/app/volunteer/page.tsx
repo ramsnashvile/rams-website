@@ -21,17 +21,17 @@ export default function VolunteerPage() {
 
       <section className="py-12">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <p className="eyebrow mb-4">Task slots</p>
-          <VolunteerList tasks={volunteerTasks} />
-          <p className="mt-6 text-sm text-brown/75">
+          {/* <p className="eyebrow mb-4">Task slots</p> */}
+          {/* <VolunteerList tasks={volunteerTasks} /> */}
+          {/* <p className="mt-6 text-sm text-brown/75">
             Slot counts are defined in{" "}
             <code className="rounded bg-amber/30 px-1">volunteer-tasks.ts</code>.
             Live availability is tracked in SignUpGenius.
-          </p>
+          </p> */}
         </div>
       </section>
 
-      <section className="border-t border-amber/40 py-12">
+      {/* <section className="border-t border-amber/40 py-12">
         <div className="mx-auto max-w-3xl px-4 md:px-6">
           {embedUrl ? (
             <iframe
@@ -58,7 +58,7 @@ export default function VolunteerPage() {
             </div>
           )}
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-maroon/5 py-10">
         <div className="mx-auto max-w-2xl px-4 text-center md:px-6">
