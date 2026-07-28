@@ -46,7 +46,7 @@ export const sevas: Seva[] = [
     name: "Sarva Seva",
     price: 201,
     description:
-      "Sarva Seva is a special pooja where Devotee's family will sponsor sarva seva's to Sri Raghavendra Swamy.This includes Ashtottara,Panchamrutha and Pauka Pooja",
+      "Sarva Seva is a special pooja where Devotee's family will sponsor sarva seva's to Sri Raghavendra Swamy.This includes Ashtottara,Panchamrutha and Paduka Pooja",
     imageUrl: "/sevas/sarva_seva.jpg",
     bookingUrl: "https://buy.stripe.com/14A3cv3Ib1c64oW1xT4Ni03",
   },
