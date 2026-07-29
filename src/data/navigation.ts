@@ -18,7 +18,7 @@ export const mainNav: NavItem[] = [
       { href: "/schedule", label: "Schedule" },
       { href: "/rsvp", label: "RSVP" },
       { href: "/volunteer", label: "Volunteer" },
-      { href: "/food", label: "Food" },
+      // { href: "/food", label: "Food" },
     ],
   },
   { href: "/sevas", label: "Sevas" },
