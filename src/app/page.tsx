@@ -1,11 +1,8 @@
 import Link from "next/link";
-import { GalleryGrid } from "@/components/GalleryGrid";
 import { HelpCards } from "@/components/HelpCards";
 import { Hero } from "@/components/Hero";
 import { SwamiPortrait } from "@/components/SwamiPortrait";
-import { SponsorLogos } from "@/components/SponsorSection";
 import { event } from "@/data/event";
-import { sponsors } from "@/data/sponsors";
 
 export default function HomePage() {
   return (
@@ -37,7 +34,7 @@ export default function HomePage() {
               <p className="text-left text-brown/90">
                 {event.orgName} ({event.orgShort}) is proud to announce the
                 annual {event.name} — a sacred gathering of Sri Raghavendra Swamy
-                devotee's  in Nashville.
+                devotee&apos;s in Nashville.
               </p>
               <p className="mt-4 text-left text-brown/90">
                 The event features morning Pooja, cultural

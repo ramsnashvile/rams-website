@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-6xl gap-12 px-4 md:px-6 lg:grid-cols-2 lg:items-center">
           <div>
             <p className="text-brown/90">
-              RAM'S is a devotee-led community organization hosting the annual
+              RAM&apos;S is a devotee-led community organization hosting the annual
               Raayara Aaradhana Mahotsava and year-round spiritual activities
               for families in Middle Tennessee.
             </p>

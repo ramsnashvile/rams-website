@@ -1,16 +1,11 @@
-import { ExternalSignupLink } from "@/components/TallyEmbed";
 import { PageHeader } from "@/components/PageHeader";
-import { VolunteerList } from "@/components/VolunteerList";
 import { event } from "@/data/event";
-import { volunteerTasks } from "@/data/volunteer-tasks";
 
 export const metadata = {
   title: "Volunteer Signup",
 };
 
 export default function VolunteerPage() {
-  const embedUrl = event.volunteerSignupUrl;
-
   return (
     <>
       <PageHeader
