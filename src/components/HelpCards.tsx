@@ -25,7 +25,7 @@ const cards = [
   {
     icon: "💛",
     title: "Donate / Sponsor",
-    description: "Gold, Silver, Bronze tiers or open donation",
+    description: "Guru Pada, Brindavana, Bhakti Seva or open donation",
     href: "/sponsor",
     cta: "Give →",
   },
