@@ -1,6 +1,5 @@
 import { FoodNeedsTable } from "@/components/FoodNeedsTable";
 import { PageHeader } from "@/components/PageHeader";
-import { TallyEmbed } from "@/components/TallyEmbed";
 import { event } from "@/data/event";
 import { foodNeeds } from "@/data/food-needs";
 

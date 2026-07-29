@@ -1,5 +1,4 @@
 import { PageHeader } from "@/components/PageHeader";
-import { TallyEmbed } from "@/components/TallyEmbed";
 import { event } from "@/data/event";
 
 export const metadata = {
