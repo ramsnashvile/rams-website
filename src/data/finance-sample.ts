@@ -14,13 +14,13 @@ export const incomeRows = [
   {
     date: "2026-05-03",
     category: "Sponsorship",
-    description: "Gold tier — Sharma Family",
+    description: "Guru Pada Seva — Sharma Family",
     amount: 500,
   },
   {
     date: "2026-05-07",
     category: "Sponsorship",
-    description: "Silver tier — ABC Foods",
+    description: "Brindavana Seva — ABC Foods",
     amount: 250,
   },
   {
@@ -32,13 +32,13 @@ export const incomeRows = [
   {
     date: "2026-05-14",
     category: "Sponsorship",
-    description: "Bronze tier — Patel Pharmacy",
+    description: "Bhakti Seva — Patel Pharmacy",
     amount: 100,
   },
   {
     date: "2026-05-14",
     category: "Sponsorship",
-    description: "Bronze tier — Nair Realty",
+    description: "Bhakti Seva — Nair Realty",
     amount: 100,
   },
   {

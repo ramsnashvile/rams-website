@@ -5,13 +5,14 @@ export type Sponsor = {
   website?: string;
 };
 
+/** Placeholder logos until real sponsor names are added. Keys: gold=Guru Pada, silver=Brindavana, bronze=Bhakti. */
 export const sponsors: Sponsor[] = [
-  { name: "Gold Sponsor", tier: "gold" },
-  { name: "Gold Sponsor", tier: "gold" },
-  { name: "Silver Sponsor", tier: "silver" },
-  { name: "Silver Sponsor", tier: "silver" },
-  { name: "Bronze Sponsor", tier: "bronze" },
-  { name: "Bronze Sponsor", tier: "bronze" },
-  { name: "Bronze Sponsor", tier: "bronze" },
-  { name: "Bronze Sponsor", tier: "bronze" },
+  { name: "Guru Pada Seva Sponsor", tier: "gold" },
+  { name: "Guru Pada Seva Sponsor", tier: "gold" },
+  { name: "Brindavana Seva Sponsor", tier: "silver" },
+  { name: "Brindavana Seva Sponsor", tier: "silver" },
+  { name: "Bhakti Seva Sponsor", tier: "bronze" },
+  { name: "Bhakti Seva Sponsor", tier: "bronze" },
+  { name: "Bhakti Seva Sponsor", tier: "bronze" },
+  { name: "Bhakti Seva Sponsor", tier: "bronze" },
 ];

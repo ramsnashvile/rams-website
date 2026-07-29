@@ -49,8 +49,8 @@ function buildPurposeOptions(): PurposeOption[] {
       keyof typeof event.sponsorshipTiers,
       (typeof event.sponsorshipTiers)[keyof typeof event.sponsorshipTiers],
     ][]
-  ).map(([key, tier]) => ({
-    label: `${key.charAt(0).toUpperCase()}${key.slice(1)} Sponsorship`,
+  ).map(([, tier]) => ({
+    label: tier.name,
     amount: tier.amount,
   }));
 

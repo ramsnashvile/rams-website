@@ -12,19 +12,16 @@ export function SponsorTierCards() {
   const tiers = [
     {
       key: "gold" as const,
-      label: "Gold Sponsor",
       data: event.sponsorshipTiers.gold,
       url: event.stripe.gold,
     },
     {
       key: "silver" as const,
-      label: "Silver Sponsor",
       data: event.sponsorshipTiers.silver,
       url: event.stripe.silver,
     },
     {
       key: "bronze" as const,
-      label: "Bronze Sponsor",
       data: event.sponsorshipTiers.bronze,
       url: event.stripe.bronze,
     },
@@ -37,7 +34,9 @@ export function SponsorTierCards() {
           key={tier.key}
           className={`card flex flex-col border-2 ${tierStyles[tier.key]}`}
         >
-          <p className="eyebrow">{tier.label}</p>
+          <p className="eyebrow">
+            {tier.data.emoji} {tier.data.name}
+          </p>
           <p className="mt-2 font-display text-4xl font-black text-maroon-deep">
             ${tier.data.amount}
           </p>
@@ -56,7 +55,7 @@ export function SponsorTierCards() {
               rel="noopener noreferrer"
               className="btn-primary mt-6 w-full text-center"
             >
-              Become {tier.label} →
+              Offer {tier.data.name} →
             </a>
           ) : (
             <span className="btn-primary mt-6 w-full cursor-not-allowed opacity-60">
@@ -79,14 +78,23 @@ export function SponsorLogos({ sponsors }: { sponsors: Sponsor[] }) {
     bronze: sponsors.filter((s) => s.tier === "bronze"),
   };
 
+  const tierLabels = {
+    gold: event.sponsorshipTiers.gold,
+    silver: event.sponsorshipTiers.silver,
+    bronze: event.sponsorshipTiers.bronze,
+  };
+
   return (
     <div className="space-y-8">
       {(["gold", "silver", "bronze"] as const).map((tier) => {
         const list = byTier[tier];
         if (list.length === 0) return null;
+        const meta = tierLabels[tier];
         return (
           <div key={tier}>
-            <p className="eyebrow mb-4 capitalize">{tier} sponsors</p>
+            <p className="eyebrow mb-4">
+              {meta.emoji} {meta.name}
+            </p>
             <div className="flex flex-wrap justify-center gap-6">
               {list.map((s, i) => (
                 <div

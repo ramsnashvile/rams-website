@@ -60,13 +60,15 @@ export const event = {
   schedulePdfUrl: "",
   calendarIcsUrl: "",
   stripe: {
-    gold: "#",
-    silver: "#",
-    bronze: "#",
-    donation: "#",
+    gold: "https://donate.stripe.com/14AfZh2E79ICg7Ea4p4Ni06",
+    silver: "https://donate.stripe.com/4gM6oHdiLcUOaNk7Wh4Ni07",
+    bronze: "https://donate.stripe.com/3cI5kD6Un3ke3kSekF4Ni08",
+    donation: "https://buy.stripe.com/4gM6oH2E78Ey3kS2BX4Ni05",
   },
   sponsorshipTiers: {
     gold: {
+      name: "Guru Pada Seva",
+      emoji: "🌺",
       amount: 500,
       benefits: [
         "Logo on main banner (largest size)",
@@ -78,6 +80,8 @@ export const event = {
       ],
     },
     silver: {
+      name: "Brindavana Seva",
+      emoji: "🪔",
       amount: 250,
       benefits: [
         "Logo on event banner (medium)",
@@ -88,6 +92,8 @@ export const event = {
       ],
     },
     bronze: {
+      name: "Bhakti Seva",
+      emoji: "🙏",
       amount: 100,
       benefits: [
         "Name on event program",
