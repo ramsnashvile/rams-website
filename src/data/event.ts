@@ -4,14 +4,14 @@ export const event = {
   tagline:
     "A sacred celebration of Sri Raghavendra Swamy's divine grace",
   kannadaTitle: "ರಾಯರ ಆರಾಧನಾ ಮಹೋತ್ಸವ",
-  orgName: "Raayara Aaradhana Mahothsava Samithi,Nashville",
+  orgName: "Raayara Aaradhana Mahothsava Samithi, Nashville",
   orgShort: "RAM'S Nashville",
   association:
     "Organized in association with Ananthaadi Rayara Matha, Atlanta (RAMA Atlanta)",
   dedication:
     "",
   date: "Sunday, August 30, 2026",
-  dateShort: "Aug 29, 2026",
+  dateShort: "Aug 30, 2026",
   time: "9:00 AM – 6:00 PM",
   venue: "Sri Sai Baba Temple, Nashville",
   venueAddress: "12330 Old Hickory Blvd, Antioch, TN 37013",
@@ -35,13 +35,13 @@ export const event = {
     saveTheDate: "",
   },
   emails: {
-    general: "info@ramsnashville.org",
+    general: "",
     volunteer: "Madduri Gopala Shankar +16158393094 (Whatsapp)",
-    sponsor: "sponsor@ramsnashville.org",
-    food: "food@ramsnashville.org",
-    treasurer: "treasurer@ramsnashville.org",
+    sponsor: "Guruprasad Anginthayya +15082507516",
+    food: "Sushma Prassana +13098257620 ",
+    treasurer: "+15082507516",
   },
-  treasurerName: "Guruprasad  Anginthayya",
+  treasurerName: "Guruprasad Anginthayya",
   volunteerPhone: "(615) 290-9378",
   is501c3: false,
   // Replace with real URLs when forms are created
@@ -71,11 +71,11 @@ export const event = {
       emoji: "🌺",
       amount: 500,
       benefits: [
-        "Logo on main banner (largest size)",
+     
         "Logo on event website homepage",
         "Name announced during main program",
-        "Reserved table for 4 guests",
-        "Social media feature post",
+        "Reserved chair for 4 guests",
+        "Listed on website sponsors section",
         "Certificate of appreciation",
       ],
     },
@@ -84,10 +84,11 @@ export const event = {
       emoji: "🪔",
       amount: 250,
       benefits: [
-        "Logo on event banner (medium)",
+        
         "Logo on event website",
-        "Name announced at event",
-        "2 reserved seats",
+        "Name announced during main program",
+        "Reserved chair for 2 guests",
+        "Listed on website sponsors section",
         "Certificate of appreciation",
       ],
     },
@@ -96,7 +97,7 @@ export const event = {
       emoji: "🙏",
       amount: 100,
       benefits: [
-        "Name on event program",
+        "Name announced during main program",
         "Listed on website sponsors section",
         "Certificate of appreciation",
       ],
@@ -127,7 +128,7 @@ export const event = {
       icon: "🙏",
       title: "Aradhana Pooja",
       description:
-        "Begin with Aradhana Rituals  in the main hall.",
+        "Begin with Aradhana Rituals in the main hall.",
       time: "9:00 AM",
     },
 
@@ -135,15 +136,15 @@ export const event = {
       icon: "🍇🍽️",
       title: "Light Refreshments",
       description:
-        "Fruits,Juices and Snacks",
-      time: "Approximately around 10:00 AM",
+        "",
+      time: "~ 09:00 AM",
     },
     
     {
       icon: "🎭",
       title: "Cultural Program",
       description:
-        "Keerthana's,Group Songs and Dance Performance,",
+        "Keerthanas, Group Songs, and Dance Performance",
       time: "",
     },
 
@@ -151,8 +152,8 @@ export const event = {
       icon: "🍽️",
       title: "Prasadam(Lunch)",
       description:
-        "Prasadam served for everyone. Volunteer-prepared vegetarian meal(No Onion,No Garlic)",
-      time: "Approximately around 2:00 PM",
+        "Prasadam served for everyone. Volunteer-prepared vegetarian meal (No Onion, No Garlic)",
+      time: "~ 2:00 PM",
     },
     
     

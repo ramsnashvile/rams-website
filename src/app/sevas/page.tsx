@@ -35,7 +35,7 @@ export default function SevasPage() {
       <PageHeader
         eyebrow="Aaraadhane 2026"
         title="Sevas"
-        subtitle="Choose a seva to support the event. Seva name, price, description, and image are configurable in src/data/sevas.ts."
+        subtitle=""
       />
 
       <section className="py-12">

@@ -13,7 +13,7 @@ const aboutLinks = [
   {
     href: "/about/executive-committee",
     title: "Executive Committee",
-    description: "Meet the volunteers who plan and lead our annual Mahotsava.",
+    description: "Meet the volunteers who plan and lead our annual Mahothsava.",
     icon: "👥",
   },
   {
@@ -42,7 +42,7 @@ export default function AboutPage() {
           <div>
             <p className="text-brown/90">
               RAM&apos;S is a devotee-led community organization hosting the annual
-              Raayara Aaradhana Mahotsava and year-round spiritual activities
+              Raayara Aaradhana Mahothsava and year-round spiritual activities
               for families in Middle Tennessee.
             </p>
             <p className="mt-4 text-brown/90">{event.association}</p>

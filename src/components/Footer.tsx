@@ -22,7 +22,7 @@ export function Footer() {
               <h3 className="font-display text-xl font-bold">{event.orgShort}</h3>
             </div>
             <p className="mt-3 max-w-md text-sm text-parchment/85">
-              {event.orgName} — sacred gathering of Sri Raghavendra Swamy devotee&apos;s in Nashville.
+              {event.orgName} — sacred gathering of Sri Raghavendra Swamy devotees in Nashville.
             </p>
             <p className="mt-2 text-sm text-parchment/75">{event.association}</p>
           </div>

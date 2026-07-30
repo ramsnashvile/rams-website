@@ -11,15 +11,15 @@ export const schedule: ScheduleItem[] = [
     time: "9:00 AM",
     title: "Aradhana Pooja",
     description: "Begin with Aradhana Rituals in the main hall.",
-    tags: ["All attendees"],
+    tags: ["Main Hall"],
     period: "morning",
   },
   
   {
-    time: "10:00 AM",
+    time: "09:00 AM Onwards",
     title: "Light Refreshments",
-    description: "Fruits,Juices and Snacks",
-    tags: ["Main hall"],
+    description: "",
+    tags: ["Dining hall"],
     period: "morning",
   },
   {
@@ -27,15 +27,15 @@ export const schedule: ScheduleItem[] = [
     title: "Cultural Program ",
     description:
       "Classical music and devotional songs by community members",
-    tags: ["Cultural"],
+    tags: ["Main Hall"],
     period: "morning",
   },
   {
     time: "2:00 PM",
     title: "Prasadam ",
     description:
-      "Prasadam served for everyone. Volunteer-prepared vegetarian meal(No Onion,No Garlic) — children first",
-    tags: ["Food", "All welcome"],
+      "Prasadam served for everyone. Volunteer-prepared vegetarian meal (No Onion, No Garlic) — children first",
+    tags: ["Dining Hall"],
     period: "morning",
   },
  

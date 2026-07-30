@@ -32,13 +32,13 @@ export default function HomePage() {
           <div className="mt-8 grid gap-10 lg:grid-cols-2 lg:items-center">
             <div>
               <p className="text-left text-brown/90">
-                {event.orgName} ({event.orgShort}) is proud to announce the
+                {event.orgName} ({event.orgShort}) is proud to announce 355th
                 annual {event.name} — a sacred gathering of Sri Raghavendra Swamy
-                devotee&apos;s in Nashville.
+                devotees in Nashville.
               </p>
               <p className="mt-4 text-left text-brown/90">
                 The event features morning Pooja, cultural
-                programs, Mahamangalarthi followed by Prasadam(Lunch), {event.association}.
+                programs, Mahamangalarthi followed by Prasadam (Lunch). {event.association}.
               </p>
               <p className="mt-4 font-medium text-maroon">{event.dedication}</p>
               <Link href="/schedule" className="btn-primary mt-6 inline-flex">
@@ -165,7 +165,7 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <p className="eyebrow text-center"></p>
           <h2 className="section-title mt-2 text-center">
-            Sponsorship Oppurtunity
+            Sponsorship Opportunity
           </h2>
           <p className="mx-auto mt-3 max-w-xl text-center text-brown/85">
             Generous community members who make this event possible.

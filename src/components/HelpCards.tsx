@@ -18,7 +18,7 @@ const cards = [
   {
     icon: "🍱",
     title: "Volunteer For Food Preparation",
-    description: "Sign up to bring a dish — see what's needed",
+    description: "Contact Sushma Prasanna +13098257620 for food volunteering opportunities",
     href: "/food",
     cta: "Signup →",
   },

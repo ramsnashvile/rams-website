@@ -16,7 +16,7 @@ function statusLabel(status: FoodNeed["status"]) {
 export function FoodNeedsTable({ items }: { items: FoodNeed[] }) {
   return (
     <div className="overflow-x-auto rounded-xl border border-amber/50 bg-white/90">
-      <table className="w-full min-w-[480px] text-left text-sm">
+      {/* <table className="w-full min-w-[480px] text-left text-sm">
         <thead>
           <tr className="border-b border-amber/40 bg-maroon/5">
             <th className="px-4 py-3 font-bold text-maroon-deep">
@@ -42,7 +42,7 @@ export function FoodNeedsTable({ items }: { items: FoodNeed[] }) {
             </tr>
           ))}
         </tbody>
-      </table>
+      </table> */}
     </div>
   );
 }

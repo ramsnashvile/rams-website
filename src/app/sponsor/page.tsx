@@ -15,7 +15,7 @@ export default function SponsorPage() {
       <PageHeader
         eyebrow="Support Our Community"
         title="Sponsorship & Donations"
-        subtitle="Your generosity makes this event possible. All sponsorships are publicly recognized. Finance is fully transparent."
+        subtitle=""
       />
 
       <section className="py-12">
