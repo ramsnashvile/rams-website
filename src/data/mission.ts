@@ -1,12 +1,12 @@
 export const mission = {
   title: "Our Mission",
   intro:
-    "Raayara Aaradhana Mahotsava Samithi Nashville (RAMS) exists to nurture devotion to Sri Guru Raghavendra Swamy and strengthen our devotee community in Middle Tennessee.",
+    "Raayara Aaradhana Mahothsava Samithi, Nashville (RAMS) exists to nurture devotion to Sri Guru Raghavendra Swamy and strengthen our devotee community in Middle Tennessee.",
   pillars: [
     {
       title: "Devotion & Aradhana",
       description:
-        "Organize annual Raayara Aaradhana Mahotsava and regular satsangs that deepen spiritual practice for families and youth.",
+        "Organize annual Raayara Aaradhana Mahothsava and regular satsangs that deepen spiritual practice for families and youth.",
     },
     {
       title: "Community & Seva",

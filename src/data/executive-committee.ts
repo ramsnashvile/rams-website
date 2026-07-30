@@ -14,7 +14,7 @@ export const executiveCommittee: CommitteeMember[] = [
     name: "Madduri Gopala Shankar",
     role: "President",
     description:
-      "Leads overall planning for Raayara Aaradhana Mahotsava and coordinates with RAMA Atlanta.",
+      "Leads overall planning for Raayara Aaradhana Mahothsava and coordinates with RAMA Atlanta.",
     imageUrl: "",
   },
   {

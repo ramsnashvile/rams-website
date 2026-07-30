@@ -1,6 +1,6 @@
-# RAM'S Nashville — Raayara Aaradhana Mahotsava 2026
+# RAM'S Nashville — Raayara Aaradhana Mahothsava 2026
 
-Public website for [Raayara Aaradhana Mahotsava Samithi Nashville](https://github.com/ramsnashvile/rams-website) (~1,000 attendees). Built with Next.js 14, Tailwind CSS, and designed for easy handoff to a youth committee.
+Public website for [Raayara Aaradhana Mahothsava Samithi Nashville](https://github.com/ramsnashvile/rams-website) (~1,000 attendees). Built with Next.js 14, Tailwind CSS, and designed for easy handoff to a youth committee.
 
 **Wireframe:** [nonprofit_event_website_wireframe.html](https://ramsnashvile.github.io/rams-wireframe/nonprofit_event_website_wireframe.html)
 

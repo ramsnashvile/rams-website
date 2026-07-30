@@ -13,13 +13,13 @@ export default function FoodPage() {
       <PageHeader
         eyebrow="Community Potluck"
         title="Food Contributions"
-        subtitle="Sign up to bring a dish — see what's already been committed below."
+        subtitle="Contact Sushma Prasanna +13098257620 for food volunteering opportunities"
       />
 
       <section className="py-12">
         <div className="mx-auto max-w-4xl px-4 md:px-6">
           <h2 className="text-xl font-bold text-maroon-deep">
-            What&apos;s Still Needed
+           
           </h2>
           {/* <p className="mt-2 text-sm text-brown/75">
             Sample table below. For a live list, embed a public Google Sheet or
@@ -46,9 +46,7 @@ export default function FoodPage() {
             <h3 className="font-bold text-maroon-deep">📌 Food Guidelines</h3>
             <ul className="mt-4 list-inside list-disc space-y-2 text-sm text-brown/90">
               <li>All food must be vegetarian (no onion, garlic, meat, eggs, or fish)</li>
-              <li>Label allergens: nuts, dairy, gluten</li>
-              <li>Bring in covered, oven-safe containers if possible</li>
-              <li>Arrive by 11:30 AM to set up in the kitchen</li>
+              <li>Outside food not allowed</li>
               <li>
                 Questions?{" "}
                 <a

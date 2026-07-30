@@ -28,15 +28,23 @@ export function Hero() {
       )}
       <div className="absolute inset-0 bg-gradient-to-t from-maroon-deep via-maroon-deep/70 to-transparent" />
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 py-20 text-center md:px-6 md:py-28 lg:flex-row lg:items-center lg:text-left">
+      <p className="relative mx-auto max-w-6xl px-4 pt-4 text-center font-kannada text-[17px] text-parchment md:px-6">
+        ||ಹರಿ ಸರ್ವೋತ್ತಮ ವಾಯು ಜೀವೋತ್ತಮ||
+      </p>
+
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 pb-20 pt-10 text-center md:px-6 md:pb-28 md:pt-14 lg:flex-row lg:items-center lg:text-left">
         <div className="flex-1">
-          <p className="font-kannada text-lg text-saffron md:text-xl">
-            {event.heroKannada}
-          </p>
-          <p className="mt-2 text-sm uppercase tracking-widest text-parchment/80">
-            {event.heroSubtitle}
-          </p>
-          <h1 className="mt-6 font-display text-4xl font-black leading-tight md:text-5xl lg:text-6xl">
+          {event.heroKannada && (
+            <p className="font-kannada text-lg text-saffron md:text-xl">
+              {event.heroKannada}
+            </p>
+          )}
+          {event.heroSubtitle && (
+            <p className="mt-2 text-sm uppercase tracking-widest text-parchment/80">
+              {event.heroSubtitle}
+            </p>
+          )}
+          <h1 className="mt-2 font-display text-4xl font-black leading-tight md:text-5xl lg:text-6xl">
             {event.name}
             <br />
             <span className="text-saffron">{event.year}</span>

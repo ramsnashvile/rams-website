@@ -8,7 +8,7 @@ export const metadata = {
 const contacts = [
   {
     icon: "📧",
-    title: "General Inquiries",
+    title: "General Inquiries - Nataraj Sreelakshmi +16156938816",
     value: event.emails.general,
     href: `mailto:${event.emails.general}`,
   },
