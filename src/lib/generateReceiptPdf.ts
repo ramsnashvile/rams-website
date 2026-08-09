@@ -129,7 +129,7 @@ export async function generateReceiptPdf(record: ReceiptRecord): Promise<void> {
   doc.setTextColor(60, 40, 20);
   doc.text(`Questions? Contact ${event.treasurerName}`, margin, y);
   y += 14;
-  doc.text(event.emails.treasurer, margin, y);
+  doc.text(event.contactEmail, margin, y);
   y += 20;
   doc.setFontSize(9);
   doc.setTextColor(120, 100, 70);

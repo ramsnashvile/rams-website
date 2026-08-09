@@ -126,10 +126,10 @@ export function Footer() {
           <p>
             {event.orgShort} ·{" "}
             <a
-              href={`mailto:${event.emails.general}`}
+              href={`mailto:${event.contactEmail}`}
               className="underline hover:text-white"
             >
-              {event.emails.general}
+              {event.contactEmail}
             </a>
             {!event.is501c3 && (
               <>

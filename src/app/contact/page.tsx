@@ -5,30 +5,32 @@ export const metadata = {
   title: "Contact",
 };
 
+const mailto = `mailto:${event.contactEmail}`;
+
 const contacts = [
   {
     icon: "📧",
-    title: "General Inquiries - Nataraj Sreelakshmi +16156938816",
+    title: "General Inquiries",
     value: event.emails.general,
-    href: `mailto:${event.emails.general}`,
+    href: mailto,
   },
   {
     icon: "🙌",
     title: "Volunteer Coordinator",
     value: event.emails.volunteer,
-    href: `mailto:${event.emails.volunteer}`,
+    href: mailto,
   },
   {
     icon: "💛",
     title: "Sponsorship & Donations",
     value: event.emails.sponsor,
-    href: `mailto:${event.emails.sponsor}`,
+    href: mailto,
   },
   {
     icon: "💰",
     title: "Treasurer / Finance",
-    value: `${event.treasurerName} · ${event.emails.treasurer}`,
-    href: `mailto:${event.emails.treasurer}`,
+    value: event.emails.treasurer,
+    href: mailto,
   },
   {
     icon: "📍",
@@ -60,18 +62,22 @@ export default function ContactPage() {
                   </span>
                   <div>
                     <h3 className="font-bold text-maroon-deep">{c.title}</h3>
-                    <a
-                      href={c.href}
-                      target={c.href.startsWith("http") ? "_blank" : undefined}
-                      rel={
-                        c.href.startsWith("http")
-                          ? "noopener noreferrer"
-                          : undefined
-                      }
-                      className="text-sm text-brown/90 underline hover:text-maroon"
-                    >
-                      {c.value}
-                    </a>
+                    {c.href ? (
+                      <a
+                        href={c.href}
+                        target={c.href.startsWith("http") ? "_blank" : undefined}
+                        rel={
+                          c.href.startsWith("http")
+                            ? "noopener noreferrer"
+                            : undefined
+                        }
+                        className="text-sm text-brown/90 underline hover:text-maroon"
+                      >
+                        {c.value}
+                      </a>
+                    ) : (
+                      <p className="text-sm text-brown/90">{c.value}</p>
+                    )}
                   </div>
                 </li>
               ))}
