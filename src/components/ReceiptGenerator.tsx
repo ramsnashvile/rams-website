@@ -200,9 +200,9 @@ export function ReceiptGenerator() {
         <p className="text-sm text-brown/85">
           <strong>Note:</strong> {event.orgShort} is not yet a registered
           501(c)(3); status is pending approval. Contributions are not
-          tax-deductible. Questions?{" "}
+          tax-deductible. Questions? Contact{" "}
           <a
-            href={`mailto:${event.emails.treasurer}`}
+            href={`mailto:${event.contactEmail}`}
             className="font-semibold text-maroon underline"
           >
             {event.emails.treasurer}

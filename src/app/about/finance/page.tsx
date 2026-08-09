@@ -30,10 +30,10 @@ export default function FinancePage() {
             📊 Last updated: {event.financeLastUpdated}. Treasurer:{" "}
             {event.treasurerName} (
             <a
-              href={`mailto:${event.emails.treasurer}`}
+              href={`mailto:${event.contactEmail}`}
               className="text-maroon underline"
             >
-              {event.emails.treasurer}
+              {event.contactEmail}
             </a>
             )
           </p>

@@ -56,15 +56,7 @@ export default function SevasPage() {
                   >
                     Book Seva
                   </Link>
-                ) : (
-                  <button
-                    type="button"
-                    disabled
-                    className="btn-primary mt-4 w-full cursor-not-allowed opacity-60"
-                  >
-                    Add booking URL in sevas.ts
-                  </button>
-                )}
+                ) : null /* Trainee: if Book Seva is missing, set bookingUrl in src/data/sevas.ts */}
               </article>
             ))}
           </div>

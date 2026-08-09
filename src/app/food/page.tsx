@@ -13,7 +13,7 @@ export default function FoodPage() {
       <PageHeader
         eyebrow="Community Potluck"
         title="Food Contributions"
-        subtitle="Contact Sushma Prasanna +13098257620 for food volunteering opportunities"
+        subtitle="Contact Sushma Prasanna for food volunteering opportunities"
       />
 
       <section className="py-12">
@@ -48,9 +48,9 @@ export default function FoodPage() {
               <li>All food must be vegetarian (no onion, garlic, meat, eggs, or fish)</li>
               <li>Outside food not allowed</li>
               <li>
-                Questions?{" "}
+                Questions? Contact{" "}
                 <a
-                  href={`mailto:${event.emails.food}`}
+                  href={`mailto:${event.contactEmail}`}
                   className="font-semibold text-maroon underline"
                 >
                   {event.emails.food}

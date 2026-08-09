@@ -64,7 +64,7 @@ export const sevas: Seva[] = [
     name: "Sponsorships",
     price: 1,
     description:
-      "Coming Soon",
+      "Sponsorships are a way to support Sri Raghavendra Swamy and his mission. Contributions of any amount are welcome; there is no minimum or maximum limit.",
     imageUrl: "/sevas/sponsorships.jpg",
     bookingUrl: "https://buy.stripe.com/4gM6oH2E78Ey3kS2BX4Ni05",
   },

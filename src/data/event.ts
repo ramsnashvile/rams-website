@@ -34,15 +34,16 @@ export const event = {
     volunteerSlots: "",
     saveTheDate: "",
   },
+  contactEmail: "rams.nashville@gmail.com",
+  // Display names — all mailto links use contactEmail for now
   emails: {
-    general: "",
-    volunteer: "Madduri Gopala Shankar +16158393094 (Whatsapp)",
-    sponsor: "Guruprasad Anginthayya +15082507516",
-    food: "Sushma Prassana +13098257620 ",
-    treasurer: "+15082507516",
+    general: "Nataraj Sreelakshmi",
+    volunteer: "Madduri Gopala Shankar",
+    sponsor: "Guruprasad Anginthayya",
+    food: "Sushma Prasanna",
+    treasurer: "Guruprasad Anginthayya",
   },
   treasurerName: "Guruprasad Anginthayya",
-  volunteerPhone: "(615) 290-9378",
   is501c3: false,
   // Replace with real URLs when forms are created
   rsvpTallyUrl: "https://tally.so/r/Bz5aW5",

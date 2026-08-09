@@ -41,9 +41,9 @@ export default function SponsorPage() {
               we will notify all donors.
             </p>
             <p className="mt-4">
-              Questions?{" "}
+              Questions? Contact{" "}
               <a
-                href={`mailto:${event.emails.sponsor}`}
+                href={`mailto:${event.contactEmail}`}
                 className="font-semibold text-maroon underline"
               >
                 {event.emails.sponsor}
