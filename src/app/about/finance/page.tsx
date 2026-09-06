@@ -1,4 +1,5 @@
 import { PageHeader } from "@/components/PageHeader";
+import { event } from "@/data/event";
 
 export const metadata = {
   title: "Event Finance Report",
@@ -10,9 +11,9 @@ export default function FinancePage() {
       <PageHeader
         eyebrow="About Us · Full Transparency"
         title="Event Finance Report"
-        subtitle="More details coming soon"
+        subtitle="View the latest donor and finance report."
       >
-        {/* {event.financeSheetPublicUrl && (
+        {event.financeSheetPublicUrl && (
           <a
             href={event.financeSheetPublicUrl}
             target="_blank"
@@ -21,7 +22,7 @@ export default function FinancePage() {
           >
             Open full spreadsheet →
           </a>
-        )} */}
+        )}
       </PageHeader>
 
       {/* <section className="py-12">

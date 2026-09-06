@@ -5,7 +5,7 @@ import { event } from "@/data/event";
 
 export function Hero() {
   return (
-    <section className="relative min-h-[85vh] overflow-hidden bg-maroon-deep text-parchment">
+    <section className="relative min-h-[76vh] overflow-hidden bg-maroon-deep text-parchment">
       {event.useHeroVideo && event.heroVideoUrl ? (
         <video
           autoPlay
@@ -32,7 +32,7 @@ export function Hero() {
         ||ಹರಿ ಸರ್ವೋತ್ತಮ ವಾಯು ಜೀವೋತ್ತಮ||
       </p>
 
-      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 pb-20 pt-10 text-center md:px-6 md:pb-28 md:pt-14 lg:flex-row lg:items-center lg:text-left">
+      <div className="relative mx-auto flex max-w-6xl flex-col items-center px-4 pb-14 pt-8 text-center md:px-6 md:pb-20 md:pt-10 lg:flex-row lg:items-center lg:text-left">
         <div className="flex-1">
           {event.heroKannada && (
             <p className="font-kannada text-lg text-saffron md:text-xl">
@@ -60,12 +60,22 @@ export function Hero() {
             <li>🕘 {event.time}</li>
           </ul>
           <div className="mt-8 flex flex-wrap justify-center gap-3 lg:justify-start">
-            <Link href="/rsvp" className="btn-saffron">
-              RSVP — It&apos;s Free →
-            </Link>
-            <Link href="/schedule" className="btn-secondary border-parchment text-parchment hover:bg-white/10">
-              View Schedule
-            </Link>
+            <a
+              href={event.galleryAlbumUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-saffron"
+            >
+              Photo Album →
+            </a>
+            <a
+              href={event.highlightVideoWatchUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-secondary border-parchment text-parchment hover:bg-white/10"
+            >
+              Video Highlights →
+            </a>
             <Link href="/sponsor" className="btn-secondary border-parchment text-parchment hover:bg-white/10">
               Donate / Sponsor
             </Link>

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FeaturedAlbumGrid } from "@/components/FeaturedAlbumGrid";
 import { HelpCards } from "@/components/HelpCards";
 import { Hero } from "@/components/Hero";
 import { SwamiPortrait } from "@/components/SwamiPortrait";
@@ -9,7 +10,7 @@ export default function HomePage() {
     <>
       <Hero />
 
-      <section className="py-16">
+      <section className="py-10">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <p className="eyebrow text-center">Get involved</p>
           <h2 className="section-title mt-2 text-center">How Can You Help?</h2>
@@ -115,7 +116,7 @@ export default function HomePage() {
               rel="noopener noreferrer"
               className="font-bold text-maroon underline"
             >
-              
+              Visit our YouTube channel →
             </a>
           </p>
         </div>
@@ -145,7 +146,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* <section className="py-16">
+      <section className="py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <p className="eyebrow text-center">Memories</p>
           <h2 className="section-title mt-2 text-center">
@@ -156,10 +157,15 @@ export default function HomePage() {
             Mahothsava 2025.
           </p>
           <div className="mt-10">
-            <GalleryGrid />
+            <FeaturedAlbumGrid />
           </div>
+          <p className="mt-8 text-center">
+            <Link href="/gallery" className="btn-secondary">
+              View full photo & video gallery →
+            </Link>
+          </p>
         </div>
-      </section> */}
+      </section>
 
       <section className="border-t border-amber/40 bg-maroon/5 py-16">
         <div className="mx-auto max-w-6xl px-4 md:px-6">

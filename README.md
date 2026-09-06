@@ -16,6 +16,9 @@ Public website for [Raayara Aaradhana Mahothsava Samithi Nashville](https://gith
 | `/sponsor` | Stripe Payment Link buttons |
 | `/finance` | Transparent finance (sample + Google Sheet embed) |
 | `/contact` | Emails + Tally contact form |
+| `/resources/shlokas` | Devotional verses |
+| `/resources/quiz` | Configurable quizzes, results, share, leaderboard |
+| `/gallery` | Photo and video albums (Drive photos + YouTube highlights) |
 
 ## Quick start
 
@@ -33,9 +36,10 @@ Edit **`src/data/event.ts`** and add real URLs:
 1. **Tally.so** — `rsvpTallyUrl`, `foodTallyUrl`, `contactFormUrl`
 2. **Stripe Payment Links** — `stripe.gold`, `silver`, `bronze`, `donation`
 3. **SignUpGenius** — `volunteerSignupUrl` or `volunteerSignupDirectUrl`
-4. **Google Sheets** — `financeSheetEmbedUrl`, `financeSheetPublicUrl`
-5. **YouTube** — `highlightVideoUrl`, `youtubeChannelUrl`
-6. **Optional** — `useHeroVideo: true` + add `public/videos/event-highlight.mp4`
+4. **Google Sheets** — `financeSheetEmbedUrl`, `financeSheetPublicUrl`; quiz leaderboard via `quizLeaderboard.scriptUrl` in `src/data/quiz.ts` (see CONTRIBUTING.md)
+5. **YouTube** — `highlightVideoUrl`, `youtubeChannelUrl`; album videos in `src/data/albums.ts`
+6. **Google Drive photo albums** — deploy `scripts/drive-album.gs`, then paste web app URL into `driveAlbums.scriptUrl` in `src/data/albums.ts` (see CONTRIBUTING.md)
+7. **Optional** — `useHeroVideo: true` + add `public/videos/event-highlight.mp4`
 
 ## Deploy to Vercel (free)
 
@@ -52,6 +56,6 @@ See **[CONTRIBUTING.md](./CONTRIBUTING.md)** for how to edit schedule, sponsors,
 
 - Next.js 14 (App Router) + TypeScript + Tailwind CSS
 - Hosting: Vercel (hobby tier)
-- Forms: Tally.so · Payments: Stripe Payment Links · Volunteer: SignUpGenius · Finance: Google Sheets
+- Forms: Tally.so · Payments: Stripe Payment Links · Volunteer: SignUpGenius · Finance: Google Sheets · Albums: Google Drive + YouTube
 
 Bharathi RamaNa mukhya PraNaantargata Sri Krishnaarpanamastu 🙏
