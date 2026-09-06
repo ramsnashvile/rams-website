@@ -114,8 +114,18 @@ export function Footer() {
             <h4 className="mb-3 font-bold text-saffron">Resources</h4>
             <ul className="space-y-2 text-sm">
               <li>
+                <Link href="/gallery" className="hover:underline">
+                  Gallery
+                </Link>
+              </li>
+              <li>
                 <Link href="/resources/shlokas" className="hover:underline">
                   Shlokas
+                </Link>
+              </li>
+              <li>
+                <Link href="/resources/quiz" className="hover:underline">
+                  Quiz
                 </Link>
               </li>
             </ul>

@@ -1,3 +1,5 @@
+import { event } from "@/data/event";
+
 export type NavLink = {
   href: string;
   label: string;
@@ -17,6 +19,8 @@ export const mainNav: NavItem[] = [
     children: [
       { href: "/schedule", label: "Schedule" },
       { href: "/rsvp", label: "RSVP" },
+      { href: event.galleryAlbumUrl, label: "Photo Album" },
+      { href: event.highlightVideoWatchUrl, label: "Highlights Video" },
       { href: "/volunteer", label: "Volunteer" },
       // { href: "/food", label: "Food" },
     ],
@@ -34,7 +38,11 @@ export const mainNav: NavItem[] = [
   },
   {
     label: "Resources",
-    children: [{ href: "/resources/shlokas", label: "Shlokas" }],
+    children: [
+      { href: "/gallery", label: "Gallery" },
+      { href: "/resources/shlokas", label: "Shlokas" },
+      { href: "/resources/quiz", label: "Quiz" },
+    ],
   },
   { href: "/contact", label: "Contact" },
 ];

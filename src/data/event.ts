@@ -52,12 +52,13 @@ export const event = {
   volunteerSignupUrl: "",
   volunteerSignupDirectUrl: "",
   financeSheetEmbedUrl: "",
-  financeSheetPublicUrl: "",
+  financeSheetPublicUrl:
+    "https://docs.google.com/spreadsheets/d/1_34VJi9UBl0OtTD88P-VjsHkvyuZL3Y7PKEgfVq-WMY/edit?usp=sharing",
   financeLastUpdated: "May 15, 2026",
-  highlightVideoUrl: "https://www.youtube.com/embed/KOHeSpsD5I4",
-  highlightVideoWatchUrl: "https://www.youtube.com/watch?v=KOHeSpsD5I4",
+  highlightVideoUrl: "https://www.youtube.com/embed/O5DpWtqRfYg",
+  highlightVideoWatchUrl: "https://youtu.be/O5DpWtqRfYg",
   youtubeChannelUrl: "https://www.youtube.com",
-  galleryAlbumUrl: "https://photos.google.com",
+  galleryAlbumUrl: "https://photos.app.goo.gl/EB65sbKJxz3N1kCg8",
   schedulePdfUrl: "",
   calendarIcsUrl: "",
   stripe: {

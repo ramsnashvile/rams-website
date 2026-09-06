@@ -11,6 +11,10 @@ import {
   type NavLink,
 } from "@/data/navigation";
 
+function isExternalHref(href: string): boolean {
+  return href.startsWith("http://") || href.startsWith("https://");
+}
+
 function NavDropdown({
   item,
   pathname,
@@ -37,6 +41,8 @@ function NavDropdown({
               <Link
                 href={child.href}
                 className="block min-h-[44px] rounded-lg px-3 py-3 hover:bg-white/10"
+                target={isExternalHref(child.href) ? "_blank" : undefined}
+                rel={isExternalHref(child.href) ? "noopener noreferrer" : undefined}
                 onClick={onNavigate}
               >
                 {child.label}
@@ -78,6 +84,8 @@ function NavDropdown({
                 className={`block px-4 py-2.5 text-sm transition hover:bg-white/10 ${
                   isNavActive(pathname, child.href) ? "bg-saffron/20 font-semibold" : ""
                 }`}
+                target={isExternalHref(child.href) ? "_blank" : undefined}
+                rel={isExternalHref(child.href) ? "noopener noreferrer" : undefined}
               >
                 {child.label}
               </Link>
@@ -92,6 +100,7 @@ function NavDropdown({
 export function Nav() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
+  const showRsvpCta = pathname !== "/";
 
   const closeMenu = () => setMenuOpen(false);
 
@@ -129,9 +138,11 @@ export function Nav() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <Link href="/rsvp" className="btn-saffron hidden text-sm sm:inline-flex">
-            RSVP Now →
-          </Link>
+          {showRsvpCta && (
+            <Link href="/rsvp" className="btn-saffron hidden text-sm sm:inline-flex">
+              RSVP Now →
+            </Link>
+          )}
           <button
             type="button"
             className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center rounded-lg border border-parchment/30 xl:hidden"
@@ -174,11 +185,13 @@ export function Nav() {
                 </li>
               );
             })}
-            <li className="pt-2">
-              <Link href="/rsvp" className="btn-saffron w-full" onClick={closeMenu}>
-                RSVP Now →
-              </Link>
-            </li>
+            {showRsvpCta && (
+              <li className="pt-2">
+                <Link href="/rsvp" className="btn-saffron w-full" onClick={closeMenu}>
+                  RSVP Now →
+                </Link>
+              </li>
+            )}
           </ul>
         </nav>
       )}

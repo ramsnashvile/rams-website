@@ -57,6 +57,70 @@ Update task names, schedules, and slot counts. **Live signup** is managed in Sig
 
 Or use a public Google Sheet embed (add URL to `event.ts` when ready).
 
+### Quizzes
+
+**File:** `src/data/quiz.ts`
+
+- Add or edit objects in the `quizzes` array
+- Set `published: false` to hide a quiz
+- Optional question image: add a file to `public/quiz/` and set `imageUrl: "/quiz/your-file.jpg"`
+- `correctOptionId` must match one of the option `id` values
+- Paste the Apps Script web app URL into `quizLeaderboard.scriptUrl` when the leaderboard Sheet is ready (leave empty until then)
+
+Example question:
+
+```ts
+{
+  id: "brindavana-town",
+  prompt: "Sri Raghavendra Swamy entered Brindavana in which town?",
+  imageUrl: "/quiz/mantralayam.jpg",
+  options: [
+    { id: "a", text: "Udupi" },
+    { id: "b", text: "Mantralayam" },
+  ],
+  correctOptionId: "b",
+  explanation: "His Brindavana is at Mantralayam.",
+}
+```
+
+### Quiz leaderboard (Google Sheet)
+
+Scores are stored in a Google Sheet. One-time setup:
+
+1. Create a Google Sheet
+2. **Extensions → Apps Script** — paste the contents of `scripts/quiz-leaderboard.gs`
+3. **Deploy → New deployment → Web app**
+   - Execute as: **Me**
+   - Who has access: **Anyone**
+4. Copy the web app URL into `quizLeaderboard.scriptUrl` in `src/data/quiz.ts`
+5. Commit and merge — the quiz pages will then show Post score and the top 10
+
+Moderation: delete or edit a row in the Sheet. The next page load updates the board. Display names are public; scores are honor-system (submitted from the browser).
+
+### Photo and video albums (Google Drive + YouTube)
+
+**Files:** `src/data/albums.ts` and `scripts/drive-album.gs`
+
+- Add one album per event in the `albums` array (`slug`, `title`, `year`, `description`)
+- Paste each Drive folder ID into `driveFolderId`
+- Optional: add `coverFileId` and `featuredFileIds` for homepage/gallery previews
+- Add highlight videos with YouTube IDs (`videos[].youtubeId`); use **Unlisted** uploads
+
+Drive photos are loaded through Apps Script (one-time setup):
+
+1. Open any Google Sheet (used only to host script)
+2. **Extensions → Apps Script** — paste `scripts/drive-album.gs`
+3. **Deploy → New deployment → Web app**
+   - Execute as: **Me**
+   - Who has access: **Anyone**
+4. Copy the web app URL into `driveAlbums.scriptUrl` in `src/data/albums.ts`
+5. Make sure each Drive album folder is shared as **Anyone with the link → Viewer**
+
+Routes:
+
+- `/gallery` lists all published albums
+- `/gallery/[slug]` shows YouTube highlights and Drive photos
+
 ## Preview locally (optional)
 
 ```bash
